@@ -1,5 +1,35 @@
+:root {
+  --dark: rgb(82, 9, 141);
+  --light: rgb(208, 179, 231);
+}
 body {
   display: flex;
-  flex-direction: column;
   line-height: 1.3;
+  margin: 0;
+  background-color: var(--light);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 1%;
+  background-color: var(--dark);
+  color: white;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1%;
+  color: black;
+}
+
+footer {
+  display: flex;
+  height: 60px;
+  background-color: var(--dark);
+  color: white;
 }
