@@ -13,9 +13,9 @@
       <h1>Kerry Eames</h1>
       <nav>
         <ul>
-          <li>About Me</li>
-          <li>My Projects</li>
-          <li>Contact Me</li>
+          <li><a href="#About Me">About Me</a></li>
+          <li><a href="#project">My Projects</a></li>
+          <li><a href="#Contact Me">Contact Me</a></li>
         </ul>
       </nav>
     </header>
@@ -26,8 +26,7 @@
           alt="Funny little dog"
         />
       </section>
-      <section>
-        <article>
+        <article id="About Me">
           <h1>How's things?</h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
@@ -42,20 +41,25 @@
         </article>
       </section>
     </main>
-    <section class="project">
-      <article>Coming Soon</article>
-      <article>Coming Soon</article>
+    <section class="project" id="project">
+      <a href="#"><article class="first">Here's the first one</article></a>
     </section>
     <section class="project">
-      <article>Coming Soon</article>
-      <article>Coming Soon</article>
+      <article class="article">Coming Soon</article>
+      <article class="article">Coming Soon</article>
     </section>
     <section class="project">
-      <article>Coming Soon</article>
-      <article>Coming Soon</article>
+      <article class="article">Coming Soon</article>
+      <article class="article">Coming Soon</article>
     </section>
-    <footer>
-      <h1>Need to get a hold of me?</h1>
+    <footer id="Contact Me">
+      <section>
+        <h1>Need to get a hold of me?</h1>
+        <ul>
+          <li>Cell: ###-###-####</li>
+          <li>Email: ###########@####.com</li>
+        </ul>
+      </section>
     </footer>
   </body>
 </html>
