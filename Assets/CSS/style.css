@@ -1,6 +1,7 @@
 :root {
   --dark: rgb(82, 9, 141);
   --light: rgb(208, 179, 231);
+  --border: rgb(66, 107, 66);
 }
 body {
   display: flex;
@@ -24,27 +25,85 @@ header h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 50px;
   padding: 15px;
-  border-top: double 10px rgb(66, 107, 66);
-  border-bottom: double 10px rgb(66, 107, 66);
+  border-top: double 10px var(--border);
+  border-bottom: double 10px var(--border);
+  border-radius: 10px;
 }
 
 nav ul {
   display: flex;
+  list-style-type: none;
+}
+
+nav li {
   flex-direction: row;
-  justify-content: space-between;
-  min-width: 300px;
+  font-size: 16px;
+  padding: 2%;
+  margin: 2%;
+  border-top: double 10px var(--border);
+  border-bottom: double 10px var(--border);
+  border-radius: 10px;
+  text-align: center;
 }
 
 main {
   display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 1%;
+  flex-direction: row;
+  margin-left: 20%;
+  margin-right: 20%;
   color: black;
+}
+
+main section {
+  margin: 15px;
+  padding: 2%;
+}
+
+img {
+  display: flex;
+  /* margin: 35%; */
+  height: 500px;
+  width: 500px;
+}
+
+main h1 {
+  padding: 2%;
+  font-size: 40px;
+}
+
+main p {
+  border-top: double 10px var(--border);
+  border-bottom: double 10px var(--border);
+  border-radius: 15px;
+  /* max-width: 30%; */
+  padding: 2%;
+  font-size: 24px;
+}
+
+main h1 p {
+  flex-direction: column;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 15px;
+  padding: 25px;
+}
+
+.project article {
+  border: solid 5px var(--border);
+  background-color: var(--dark);
+  color: white;
+  height: 200px;
+  width: 600px;
+  padding: 20px;
 }
 
 footer {
   display: flex;
+  justify-content: space-between;
   padding: 2%;
   background-color: var(--dark);
   color: white;
