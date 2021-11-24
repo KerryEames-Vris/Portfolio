@@ -98,7 +98,7 @@ main h1 p {
   padding: 25px;
 }
 
-.project a {
+.first {
   border: solid 5px var(--border);
   background-image: url("./Img/Project1.png");
   background-color: var(--dark);
@@ -119,6 +119,14 @@ main h1 p {
   padding: 20px;
   text-align: center;
   flex: 1 1 200px;
+}
+
+.article1 {
+  background-image: url("./Img/passwordGenerator.png");
+}
+
+.article2 {
+  background-image: url("./Img/scheduler.png");
 }
 
 footer {
