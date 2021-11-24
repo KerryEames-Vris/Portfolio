@@ -100,6 +100,7 @@ main h1 p {
 
 .project a {
   border: solid 5px var(--border);
+  background-image: url("./Img/Project1.png");
   background-color: var(--dark);
   color: white;
   height: 400px;
@@ -138,3 +139,4 @@ footer h1 {
     align-items: center;
     text-align: center;
   }
+}
